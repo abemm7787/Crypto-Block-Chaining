@@ -21,6 +21,7 @@ const style = {
 const Header = () => {
   return (
     <div className={style.wrapper}>
+      
       <Link href="/">
         <div className={style.logoContainer}>
           <Image src={openseaLogo} height={40} width={40} />

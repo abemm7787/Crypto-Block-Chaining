@@ -6,9 +6,8 @@
     "start": "next start"
   },
   "dependencies": {
-
     "@3rdweb/hooks": "^1.8.0",
-    "@3rdweb/sdk": "^1.36.11",
+    "@3rdweb/sdk": "^1.42.0",
     "@sanity/client": "^3.1.0",
     "@useweb/use-local-storage": "^1.2.1",
     "next": "latest",
