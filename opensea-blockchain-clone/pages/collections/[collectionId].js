@@ -11,7 +11,6 @@ import { HiDotsVertical } from 'react-icons/hi'
 import NFTCard from '../../components/NFTCard'
 
 const style = {
-  contentWrapper: `bg-amber-500 before:content-[''] before:opacity-30 before:blur`,
   bannerImageContainer: `h-[20vh] w-screen overflow-hidden flex justify-center items-center`,
   bannerImage: `w-full object-cover`,
   infoContainer: `w-screen px-4`,
@@ -48,7 +47,7 @@ const Collection = () => {
 
     const sdk = new ThirdwebSDK(
       provider.getSigner(),
-      //'https://rinkeby.infura.io/v3/a464b9152d8c466c8a94a514fce8e837'
+      'https://rinkeby.infura.io/v3/a464b9152d8c466c8a94a514fce8e837'
     )
     return sdk.getNFTModule(collectionId)
   }, [provider])
@@ -65,13 +64,11 @@ const Collection = () => {
 
   const marketPlaceModule = useMemo(() => {
     if (!provider) return
-
+    0x2EB2D747886775889B0b3107ceD61f7661B1a4D3
     const sdk = new ThirdwebSDK(
       provider.getSigner(),
-      //'https://rinkeby.infura.io/v3/a464b9152d8c466c8a94a514fce8e837'
+      'https://rinkeby.infura.io/v3/a464b9152d8c466c8a94a514fce8e837'
     )
-
-    
     return sdk.getMarketplaceModule(
       '0x9E675077f57D7F62878A5925a05e92A907352559'
     )
@@ -85,11 +82,7 @@ const Collection = () => {
     })()
   }, [marketPlaceModule])
 
-  const fetchCollectionData = async (
-    sanityClient = client, 
-    collectionId = collectionId,
-  
-    ) => {
+  const fetchCollectionData = async (sanityClient = client) => {
     const query = `*[_type == "marketItems" && contractAddress == "0x9E675077f57D7F62878A5925a05e92A907352559" ] {
       "imageUrl": profileImage.asset->url,
       "bannerImageUrl": bannerImage.asset->url,
@@ -118,7 +111,6 @@ const Collection = () => {
   console.log(router.query.collectionId)
   return (
     <div className="overflow-hidden">
-       <div className={style.contentWrapper}>
       <Header />
       <div className={style.bannerImageContainer}>
         <img
@@ -225,9 +217,6 @@ const Collection = () => {
           />
         ))}
       </div>
-      
-      </div>
-
     </div>
   )
 }
