@@ -2,7 +2,7 @@ import React from 'react'
 
 const style = {
   wrapper: `relative`,
-  container: `before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://lh3.googleusercontent.com/ujepnqpnL0nDQIHsWxlCXzyw4pf01yjz1Jmb4kAQHumJAPrSEj0-e3ABMZlZ1HEpJoqwOcY_kgnuJGzfXbd2Tijri66GXUtfN2MXQA=s250')] before:bg-cover before:bg-center before:opacity-30 before:blur`,
+  container: `before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://lh3.googleusercontent.com/XjO-iYOcAQ3aU8eEIujPgvHcSnp5b3CvYI8nFRIpm6wcWfSoKKeTxqFBmRnqAK40PQZEg66hr2CHDLHlrwFyS5yJUdpkuAVDy7GK=w404')] before:bg-cover before:bg-center before:opacity-30 before:blur`,
   contentWrapper: `flex h-screen relative justify-center flex-wrap items-center`,
   copyContainer: `w-1/2`,
   title: `relative text-white text-[46px] font-semibold`,
@@ -17,6 +17,7 @@ const style = {
   infoIcon: `flex justify-end items-center flex-1 text-[#8a939b] text-3xl font-bold`,
 }
 
+
 const Hero = () => {
   return (
     <div className={style.wrapper}>
@@ -24,10 +25,10 @@ const Hero = () => {
         <div className={style.contentWrapper}>
           <div className={style.copyContainer}>
             <div className={style.title}>
-              Discover, collect, and sell extraordinary NFTs
+              Dynamic NFT Collections 
             </div>
             <div className={style.description}>
-              OpenSea is the world&apos;s first and largest NFT marketplace
+              The Largest NFT Marketplace in The World.
             </div>
             <div className={style.ctaContainer}>
               <button className={style.accentedButton}>Explore</button>
@@ -37,23 +38,22 @@ const Hero = () => {
           <div className={style.cardContainer}>
             <img
               className="rounded-t-lg"
-              src="https://lh3.googleusercontent.com/ujepnqpnL0nDQIHsWxlCXzyw4pf01yjz1Jmb4kAQHumJAPrSEj0-e3ABMZlZ1HEpJoqwOcY_kgnuJGzfXbd2Tijri66GXUtfN2MXQA=s550"
+              src="https://lh3.googleusercontent.com/XjO-iYOcAQ3aU8eEIujPgvHcSnp5b3CvYI8nFRIpm6wcWfSoKKeTxqFBmRnqAK40PQZEg66hr2CHDLHlrwFyS5yJUdpkuAVDy7GK=w404"
               alt=""
             />
             <div className={style.infoContainer}>
               <img
                 className="h-[2.25rem] rounded-full"
-                src="https://lh3.googleusercontent.com/qQj55gGIWmT1EnMmGQBNUpIaj0qTyg4YZSQ2ymJVvwr_mXXjuFiHJG9d3MRgj5DVgyLa69u8Tq9ijSm_stsph8YmIJlJQ1e7n6xj=s64"
+                src="https://cloudflare-ipfs.com/ipfs/QmdyMn5WeoyQxCoZGAfdJZ8Crf2GgL1v6AKcTWJfpEzsoc/0.jpg"
                 alt=""
               />
               <div className={style.author}>
-                <div className={style.name}>Jolly</div>
+                <div className={style.name}>Abraham-Mirambeaux</div>
                 <a
                   className="text-[#1868b7]"
                   href="https://opensea.io/assets/0x495f947276749ce646f68ac8c248420045cb7b5e/2324922113504035910649522729980423429926362207300810036887725141691069366277"
                 >
-                  hola-kanola
-                </a>
+                  UPB-Token </a>
               </div>
             </div>
           </div>
