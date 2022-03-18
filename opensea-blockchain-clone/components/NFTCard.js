@@ -19,6 +19,9 @@ const style = {
   likeIcon: `text-xl mr-2`,
 }
 
+
+
+
 const NFTCard = ({ nftItem, title, listings }) => {
   const [isListed, setIsListed] = useState(false)
   const [price, setPrice] = useState(0)
@@ -65,6 +68,7 @@ const NFTCard = ({ nftItem, title, listings }) => {
           )}
         </div>
         <div className={style.likes}>
+    
           <span className={style.likeIcon}>
             <BiHeart />
           </span>{' '}
