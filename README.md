@@ -1,2 +1,2 @@
 # Crypto-Block-Chaining
-Crypto-Block-Chaining (Open-Sea) adjunct TailWind
+Crypto-Block-Chaining (Open-Sea)
